@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/winter_tourist_destination"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProjectAndroid2MPPL2205"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Castle"
+            android:exported="false" />
+        <activity
+            android:name=".SkiPark"
+            android:exported="false" />
+        <activity
+            android:name=".River"
+            android:exported="false" />
+        <activity
+            android:name=".Trams"
+            android:exported="false" />
+        <activity
+            android:name=".MenuPage1"
+            android:exported="false" />
+        <activity
+            android:name=".WelcomePage"
+            android:exported="true"
+            android:label="Welcome Page">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MenuPage"
+            android:exported="false"
+            android:label="Menu Page" />
+    </application>
+
+</manifest>

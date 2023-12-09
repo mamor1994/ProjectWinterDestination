@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4994CC"
+    tools:context=".MenuPage1"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="325dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/menu"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image2"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.544"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/bnt_Castle"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#30638C"
+        android:onClick="goCastle"
+        android:text="@string/explore_the_prague_castle"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.855" />
+
+    <Button
+        android:id="@+id/btn_SkiPark"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#30638C"
+        android:onClick="goSkiPark"
+        android:text="@string/try_cross_country_ski_at_skipark_praha"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.957" />
+
+    <Button
+        android:id="@+id/btn_River"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#30638C"
+        android:onClick="goRiver"
+        android:text="@string/take_the_vltava_river_cruise"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.642" />
+
+    <Button
+        android:id="@+id/btn_Trams"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#30638C"
+        android:onClick="goTrams"
+        android:text="@string/ride_the_christmas_trams"
+        android:textColorLink="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.747" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#30638C"
+        android:contentDescription="@string/backbutton"
+        android:drawableEnd="@android:drawable/ic_menu_revert"
+        android:onClick="onBackButtonClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
