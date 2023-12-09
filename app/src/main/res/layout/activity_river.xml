@@ -25,7 +25,7 @@
         android:id="@+id/textRiver"
         android:layout_width="376dp"
         android:layout_height="590dp"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
